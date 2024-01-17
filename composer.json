@@ -1,0 +1,17 @@
+{
+    "name": "batsiraimuchareva/live-user-dashboard",
+    "description": "Live user dashboard",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "BatsiraiMuchareva\\LiveUserDashboard\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Batsirai Muchareva",
+            "email": "much.batsy@gmail.com"
+        }
+    ],
+    "require": {}
+}
