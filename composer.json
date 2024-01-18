@@ -1,6 +1,6 @@
 {
     "name": "batsiraimuchareva/live-user-dashboard",
-    "description": "Live user dashboard",
+    "description": "Live user views/dashboard.html",
     "type": "project",
     "autoload": {
         "psr-4": {
