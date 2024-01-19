@@ -4,7 +4,7 @@ namespace BatsiraiMuchareva\LiveUserDashboard\Repositories;
 
 class UserRepository extends Repository
 {
-    public function findById(string $id): array
+    public function findById(string $id): ?array
     {
         return $this->get(['id' => $id]);
     }

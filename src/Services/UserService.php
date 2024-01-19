@@ -22,7 +22,7 @@ class UserService
         return $this->repository->get();
     }
 
-    public function getUser(string $id): array
+    public function getUser(string $id): ?array
     {
         return $this->repository->findById($id);
     }

@@ -25,9 +25,9 @@ class UserController
         return $this->service->getUsers();
     }
 
-    public function user(string $id): array
+    public function user( $params): ?array
     {
-        return $this->service->getUser($id);
+        return $this->service->getUser($params['id']);
     }
 
     /**
