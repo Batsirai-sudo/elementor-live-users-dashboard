@@ -8,8 +8,18 @@ export default (() => {
         return http.get('user', id);
     };
 
+    const polling = () => {
+        return http.get('polling');
+    };
+
+    const authenticate = ($data) => {
+        return http.post('login', $data)
+    }
+
     return {
         getUsers,
-        getUser
+        getUser,
+        authenticate,
+        polling,
     };
 })();
