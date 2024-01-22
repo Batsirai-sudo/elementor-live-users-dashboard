@@ -3,11 +3,11 @@
         "name": "Rick",
         "email": "ricky@gmail.com",
         "id": "65a86adddd48d",
-        "entrance_time": "2024-01-22 11:28:00",
-        "updated_at": "2024-01-22 11:28:18",
+        "entrance_time": "2024-01-22 11:39:49",
+        "updated_at": "2024-01-22 11:40:32",
         "user_ip": "127.0.0.1",
-        "visit_count": 15,
-        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/605.1.15 (KHTML, like Gecko) Version\/17.0 Safari\/605.1.15"
+        "visit_count": 16,
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/120.0.0.0 Safari\/537.36"
     },
     {
         "name": "Morty",
