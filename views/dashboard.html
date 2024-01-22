@@ -3,11 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$Title$</title>
+    <title>Live User Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/scss/styles.css">
 </head>
 <body>
 
+<div class="container">
+    <div class="full-screen justify-start center">
 
-<a href="index.html">Go to login</a>
+        <div class="header">
+            <div class="header__user">
+                <p>Name</p>
+            </div>
+        </div>
+
+        <div class="welcome">
+            <div class="welcome__message">
+                <h1>Welcome To </h1>
+                <h1>Live User Dashboard</h1>
+            </div>
+            <div class="welcome__user-count">
+                <h1>0</h1>
+                <p>People online</p>
+            </div>
+        </div>
+
+        <div class="table-container" >
+            <table>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Entrance Time</th>
+                    <th>Last Updated Time</th>
+                    <th>User IP</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+
+                <tbody id="tableBody"></tbody>
+
+            </table>
+
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="modal__close-btn" >&times;</span>
+                    <div class="modal-body"></div>
+                </div>
+            </div>
+
+            <div class="modal__overlay" id="overlay"></div>
+        </div>
+    </div>
+</div>
+<script type="module" src="assets/js/dashboard.js"></script>
 </body>
 </html>

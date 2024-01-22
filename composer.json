@@ -7,11 +7,18 @@
             "BatsiraiMuchareva\\LiveUserDashboard\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Batsirai Muchareva",
             "email": "much.batsy@gmail.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "phpunit/phpunit": "^10"
+    }
 }

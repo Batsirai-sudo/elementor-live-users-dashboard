@@ -4,8 +4,12 @@
   "description": "Live user dashboard",
   "main": "index.js",
   "scripts": {
+    "start": "http-server views -o -a localhost -p 8082",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Batsirai Muchareva",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
 }

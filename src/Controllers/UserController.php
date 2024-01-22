@@ -5,7 +5,6 @@ namespace BatsiraiMuchareva\LiveUserDashboard\Controllers;
 use BatsiraiMuchareva\LiveUserDashboard\Services\UserService;
 use Exception;
 
-
 class UserController
 {
     protected UserService $service;
@@ -15,9 +14,9 @@ class UserController
         $this->service =  new UserService();
     }
 
-    public function authenticate($data): array
+    public function authenticate($params): array
     {
-        return $this->service->authenticate($data);
+        return $this->service->authenticate($params);
     }
 
     public function users(): array
@@ -33,14 +32,8 @@ class UserController
     /**
      * @throws Exception
      */
-    public function update(string $id, array $data): bool
+    public function polling()
     {
-        return $this->service->update($id, $data);
+        return $this->service->pollingUsers();
     }
-
-    public function status()
-    {
-
-    }
-
 }

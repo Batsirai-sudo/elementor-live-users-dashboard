@@ -9,7 +9,7 @@ class UserRepository extends Repository
         return $this->get(['id' => $id]);
     }
 
-    public function find(array $data): array
+    public function find(array $data): ?array
     {
         return $this->get($data);
     }

@@ -4,6 +4,7 @@ namespace BatsiraiMuchareva\LiveUserDashboard;
 
 use BatsiraiMuchareva\LiveUserDashboard\Router\Router;
 use BatsiraiMuchareva\LiveUserDashboard\Services\SessionService;
+use BatsiraiMuchareva\LiveUserDashboard\Services\UserService;
 
 class Application
 {
@@ -31,5 +32,12 @@ class Application
         }
 
         return self::$instance;
+    }
+
+    public static function user(): ?array
+    {
+        $user = new UserService();
+
+        return $user->getUser(Application::getInstance()->session->get('user_id'));
     }
 }

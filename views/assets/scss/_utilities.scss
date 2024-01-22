@@ -1,0 +1,58 @@
+@import "variables";
+@import "mixins";
+
+h1 {
+  font-size: $h1-mobile-font-size;
+  line-height: $line-height-4;
+}
+
+h2 {
+  font-size: $h2-mobile-font-size;
+  line-height: $line-height-3;
+}
+
+h3 {
+  font-size: $h3-mobile-font-size;
+  line-height: $line-height-2;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.flex {
+  display: flex;
+}
+
+.bg-white {
+  background: white;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+@include screen(desktop) {
+  h1 {
+    font-size: $h1-font-size;
+    line-height: $line-height-4;
+  }
+
+  h2 {
+    font-size: $h2-font-size;
+    line-height: $line-height-3;
+  }
+
+  h3 {
+    font-size: $h3-font-size;
+    line-height: $line-height-2;
+  }
+}

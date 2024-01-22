@@ -1,0 +1,32 @@
+@import "variables";
+
+@mixin danger {
+  color: red;
+}
+
+@mixin full-width {
+  width: 100%;
+}
+
+@mixin padding($padding) {
+  padding-inline: $padding;
+  padding-block: $padding;
+}
+
+@mixin center($direction: column) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+
+@mixin screen($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Invalid breakpoint: #{$breakpoint}.";
+  }
+}

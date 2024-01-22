@@ -22,11 +22,12 @@ export default (() => {
         return fetch(absoluteURL, options)
             .then(response => {
 
-                if (response.status === 401) {
+                console.log(response);
+
+                if (response.status === 401 && !window.location.pathname.endsWith("index.html")) {
                     window.location.href = 'index.html';
                 }
 
-                // Return the response to allow the browser to continue with the actual request
                 return response;
             })
             .then(response => response.json())
